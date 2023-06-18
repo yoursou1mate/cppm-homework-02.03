@@ -6,9 +6,38 @@
 //
 
 #include <iostream>
+#include <string>
 
+struct address
+{
+    std::string City;
+    std::string Street;
+    unsigned int House;
+    unsigned int Appartment;
+    unsigned int Index;
+};
+
+void printAddress (struct address Person)
+{
+    std::cout << "City: ";
+    std::cin >> Person.City;
+    std::cout << "Street: ";
+    std::cin >> Person.Street;
+    std::cout << "House: ";
+    std::cin >> Person.House;
+    std::cout << "Appartment: ";
+    std::cin >> Person.Appartment;
+    std::cout << "Index: ";
+    std::cin >> Person.Index;
+}
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+   
+    int i = 10;
+    address* newAddress = new address[i];
+    
+    printAddress(newAddress[1]);
+    std::cout << '\n';
+    printAddress(newAddress[2]);
+    
     return 0;
 }
