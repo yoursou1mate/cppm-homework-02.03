@@ -32,12 +32,14 @@ void printAddress (struct address Person)
 }
 int main(int argc, const char * argv[]) {
    
-    int i = 10;
+    int i = 2;
     address* newAddress = new address[i];
     
-    printAddress(newAddress[1]);
+    printAddress(newAddress[0]);
     std::cout << '\n';
-    printAddress(newAddress[2]);
+    printAddress(newAddress[1]);
+    
+    delete [] newAddress;
     
     return 0;
 }
