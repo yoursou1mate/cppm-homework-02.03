@@ -32,7 +32,7 @@ void printAddress (struct address& Person)
 
 int main(int argc, const char * argv[]) {
    
-    int i = 0;
+    int i = 2;
     address* newAddress = new address[i];
     
     newAddress[0].City = "Moscow";
